@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="图快看"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+            android:id="@+id/textViewId"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:layout_below="@id/textViewId"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingRight="20dp"
+                      android:paddingLeft="20dp"
+                      android:paddingTop="40dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:text="1.在电脑浏览器中打开tufast.sinaapp.com"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:textSize="20dp"
+                    android:text="2.点击下方的“扫一扫”按钮，扫描屏幕中的二维码"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="20dp"
+                      android:paddingTop="10dp"
+                    android:text="3.匹配成功后，浏览手机中的图片即可"/>
+        </LinearLayout>
+        <Button android:layout_width="200dp" android:layout_height="80dp"
+                android:id="@+id/scanButtonId"
+                android:layout_below="@id/textViewId"
+                android:textSize="40sp"
+                android:layout_marginTop="80dp"
+                android:text="扫一扫"/>
+    </LinearLayout>
+
+</RelativeLayout>
